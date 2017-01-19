@@ -83,7 +83,7 @@ router.route('/articles')
 		  'sentimentBodyPolarity':'neutral',
 		  // 'sourceName': ['CNN','Fox News','Dailywire','BBC'],
 		  'sourceDomain': ['cnn.com','forbes.com','wsj.com','nasdaq.com','usatoday.com','washingtonpost.com','reuters.com','foxnews.com','dailywire.com','bbc.co.uk','nytimes.com','breitbart.com','abcnews.go.com/','nbcnews.com','cbsnews.com','rt.com/news'],
-		  'perPage': 30 
+		  'perPage': 15 
 		  // 'entitiesBodyLinksDbpedia': [
 		  //   'http://dbpedia.org/resource/Donald_Trump',
 		  //   'http://dbpedia.org/resource/Hillary_Rodham_Clinton'
