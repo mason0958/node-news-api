@@ -74,15 +74,20 @@ router.route('/articles')
 		// 	if (err)
 		// 		res.send(err);
 				var opts = {
-		  'title': 'trump',
-		  'sortBy': 'social_shares_count.facebook',
+		  // 'title': 'trump',
+		  'sortBy': 'recency',
 		  'language': ['en'],
-		  'publishedAtStart': 'NOW-7DAYS',
-		  'publishedAtEnd': 'NOW', 
-		  'entitiesBodyLinksDbpedia': [
-		    'http://dbpedia.org/resource/Donald_Trump',
-		    'http://dbpedia.org/resource/Hillary_Rodham_Clinton'
-		  ]
+		  'publishedAtStart': 'NOW-4HOURS',
+		  'publishedAtEnd': 'NOW',
+		  'sentimentTitlePolarity':'neutral',
+		  'sentimentBodyPolarity':'neutral',
+		  // 'sourceName': ['CNN','Fox News','Dailywire','BBC'],
+		  'sourceDomain': ['cnn.com','forbes.com','wsj.com','nasdaq.com','usatoday.com','washingtonpost.com','reuters.com','foxnews.com','dailywire.com','bbc.co.uk','nytimes.com','breitbart.com','abcnews.go.com/','nbcnews.com','cbsnews.com','rt.com/news'],
+		  'perPage': 30 
+		  // 'entitiesBodyLinksDbpedia': [
+		  //   'http://dbpedia.org/resource/Donald_Trump',
+		  //   'http://dbpedia.org/resource/Hillary_Rodham_Clinton'
+		  // ]
 		};
 
 		var callback = function(error, data, response) {
